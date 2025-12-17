@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Student;
-import com.example.demo.service.StudentService;
+import com.example.demo.service.StudentServices;
 
 @CrossOrigin(origins = "*")
 @RestController
 public class StudentController {
 
     @Autowired
-    StudentService studentService;
+    StudentServices studentService;
 
     @PostMapping("/postStudent")
     public Student postStud(@RequestBody Student st) {
