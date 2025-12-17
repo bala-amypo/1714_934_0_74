@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.service.impl;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +23,10 @@ public class StudentServiceImpl implements StudentService {
     public Optional<Student> getOneStudent(Long id) {
         return studentRep.findById(id);
     }
+
     @Override
     public void deleteStudent(Long id) {
         studentRep.deleteById(id);
     }
+
 }
