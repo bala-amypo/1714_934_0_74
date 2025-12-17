@@ -5,10 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepo;
-import com.example.demo.service.StudentService;
+import com.example.demo.service.StudentServices;
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public class StudentServiceImpl implements StudentServices{
      @Autowired
      StudentRepo stRepo;
      @Override
